@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/* 
+
+Shorthand:
+
+margin: 40px; all 4 sides
+margin: 40px auto; top/bottom right/left
+margin: 40px auto 0; top right/left bottom
+margin: 40px 30px 5px 10px; top right bottom left
+
+Start at the top, then continue clockwise around the box.
+
+Units of Measurement
+
+Width = % 
+Height = rem 
+Type = rem 
+Graphics = px (e.g. border would be "graphic") 
+
+Reminder: the child determines the hight of an element
+
+/* 
+
+/* Controls the size of the viewport */ 
+
+@-moz-viewport { width: device-width; scale: 1; } /* FireFox */
+@-ms-viewport { width: device-width; scale: 1; } /*Internet Explorer */
+@-o-viewport { width: device-width; scale: 1; } /* Opera */
+@-webkit-viewport { width: device-width; scale: 1; } /* Safari and Google*/
+@viewport { width: device-width; scale: 1; } /* W3C Standard */ 
+
+/* Adjust padding so it draws on the box interior */ 
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+    
+/* Control the zoom of the type on mobile */ 
+    
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+    
+/*Control the type size on mobile and desktop */
+    
+    font-size: 100%;
+    
+    font-family: Futura, sans-serif;
+}
+
+.masthead {
+    background-color: black;
+    overflow: hidden; 
+}
+
+.logo {
+    height: 4.5rem;
+    width: auto;
+    margin: auto;
+}
+
+img { 
+	width: 100%;
+    display: block;
+}
+
+figure { 
+    margin: 0 auto 1.5rem;
+    width: 100%;
+}
+
+figcaption {
+    font-size: 1rem; 
+    margin: .25rem 0;
+}
+
+h1 {
+    margin: 1.5rem 0;
+    font-size: 3.5rem; 
+    line-height: 3rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 + p {
+    font-size: 1.2rem;
+    margin: 0 0 1.5rem;
+    line-height: 1.2rem;
+}
+
+p {
+    line-height: 1.2rem;
+    margin: 0 0 1.5rem; 
+}
+
+article {
+    margin: 0;
+    padding: 0 7%;
+    overflow: hidden;
+}
+
+footer {
+    background-color: black;
+    overflow: hidden;
+}
+
+footer p { 
+    color: grey;
+    margin: .5rem 7% 1.0rem;
+    font-size: 1.20rem;
+}
+
+footer a {
+    color: grey;
+}
